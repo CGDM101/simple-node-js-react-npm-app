@@ -13,6 +13,7 @@ pipeline {
             steps {
                 bat 'npm run build'
             }
+        }
         stage('Test') {
             steps {
                 echo 'testing..'
@@ -24,5 +25,4 @@ pipeline {
             }
         }
     }
-}
 }
